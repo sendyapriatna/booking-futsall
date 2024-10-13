@@ -17,6 +17,7 @@ class DaftarBooking extends Model
         'total_harga',
         'status',
         'jadwal_array',
-        'booked'
+        'booked',
+        'snap_token'
     ];
 }

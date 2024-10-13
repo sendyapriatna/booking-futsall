@@ -14,7 +14,7 @@ class BookingController extends Controller
     {
         $this->authorize('admin');
         $booking = DB::table('booking_tables')->count();
-        return view('layouts.booking.booking', ['booking_tables' => DaftarBooking::orderBy('id', 'asc')->paginate(10)], compact('booking'));
+        return view('layouts.booking.booking', ['booking_tables' => DaftarBooking::orderBy('id', 'desc')->paginate(10)], compact('booking'));
     }
 
     public function index2()
@@ -55,15 +55,14 @@ class BookingController extends Controller
     {
         $this->authorize('admin');
         $data = DB::table('booking_tables')->where('id', $id)->first();
-        // dd($data->jadwal_array);
-        // dd($hitung);
 
-        return view('layouts.booking.booking-edit', ['data' => $data]);
+        // Mengambil data jadwal berdasarkan id di table jadwal_tables
+        $get_data_jadwal = DB::table('jadwal_tables')->where('id', $data->jadwal_array)->first();
+
+        return view('layouts.booking.booking-edit', ['data' => $data], compact('get_data_jadwal'));
     }
     public function updated(Request $request)
     {
-
-
         $post = DB::table('booking_tables')->where('id', $request->id)->update([
             'nama' => $request->nama,
             'no_lapang' => $request->no_lapang,

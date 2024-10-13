@@ -67,11 +67,9 @@
                                         <td>{{$item2->total_jam}} Jam</td>
                                         <td>{{$item2->total_harga}}</td>
                                         <td>{{$item2->tanggal_booking}}</td>
-                                        @if($item2->status == 'On Progress')
-                                        <td><button style="border-radius: 0.5em;" class="btn btn-primary mr-1">{{$item2->status}}</button></td>
-                                        @elseif($item2->status == 'Pending')
-                                        <td><button style="border-radius: 0.5em;" class="btn btn-warning mr-1">{{$item2->status}}</button></td>
-                                        @else
+                                        @if($item2->status == 'Unpaid')
+                                        <td><button style="border-radius: 0.5em;" class="btn btn-danger mr-1">{{$item2->status}}</button></td>
+                                        @elseif($item2->status == 'Paid')
                                         <td><button style="border-radius: 0.5em;" class="btn btn-success mr-1">{{$item2->status}}</button></td>
                                         @endif
                                         <td>

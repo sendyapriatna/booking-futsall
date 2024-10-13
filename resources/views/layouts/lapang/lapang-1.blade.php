@@ -28,7 +28,6 @@
                         <div class="center-cropped">
                             @php $path = Storage::url('public/post-image-profile/banner'); @endphp
                             <img src="{{ url($path) }}.jpg" class="d-block w-100" alt="...">
-                            <!-- <img src="/storage/{{$data->image}}" class="d-block w-100" alt="..."> -->
                         </div>
                     </div>
                 </div>
@@ -143,7 +142,7 @@
                     </div>
                     <div class="row mb-3">
                         <div class="col">
-                            <button type="submit" style="border-radius: 0.5em; width:100%;" class="btn btn-primary p-2">Bayar</button>
+                            <button type="submit" style="border-radius: 0.5em; width:100%;" id="myModal" class="btn btn-primary p-2">Bayar</button>
                         </div>
                     </div>
                 </section>
@@ -151,7 +150,6 @@
         </div>
     </section>
 </div>
-
 @endsection
 
 @push('scripts')

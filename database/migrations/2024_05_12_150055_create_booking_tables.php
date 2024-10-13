@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('status');
             $table->string('jadwal_array')->nullable();
             $table->enum('booked', ['0', '1'])->default('0');
+            $table->string('snap_token')->nullable();
             $table->unsignedBigInteger('user_id')->nullable();
             $table->unsignedBigInteger('jadwal_id')->nullable();
             $table->unsignedBigInteger('lapang_id')->nullable();

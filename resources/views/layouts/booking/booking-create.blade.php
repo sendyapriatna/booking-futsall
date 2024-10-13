@@ -109,9 +109,8 @@
                             <label for="status" class="form-label">Status</label>
                             <select class="custom-select" name="status" id="status" aria-label="Default select example">
                                 <option disabled selected>Pilih Status Booking</option>
-                                <option class="p-3" value="On Progres">On Progress</option>
-                                <option class="p-3" value="Pending">Pending</option>
-                                <option class="p-3" value="Success">Success</option>
+                                <option class="p-3" value="Unpaid">Unpaid</option>
+                                <option class="p-3" value="Paid">Paid</option>
                             </select>
                         </div>
                         <!-- <div class="col p-3">

@@ -4,8 +4,8 @@
 <div class="container">
     <section class="section shadow-lg p-3 mb-5 bg-body rounded" style="margin-top: 15vh;">
         <div class="row justify-content-center">
-            <div class="col-md-7">
-                <img class="img-fluid" src="{{ asset('img/login.png') }}" alt="">
+            <div class="col-md-7" style="min-height: 550px;">
+                <img class="img-fluid" src="{{ asset('img/login.png') }}" alt="" style="margin-top: 5vh;">
             </div>
             <div class="col-md-5">
                 <div class="col-md p-4 mt-4 text-center justify-content-center">
@@ -26,10 +26,32 @@
                         </div>
                     </div>
                     <div class="row mb-3 justify-content-center">
+                        <!-- <label for="email" class="col-md-10 col-form-label text-md-end"><i class="fa-solid fa-user"></i></label> -->
+                        <div class="col-md-8">
+                            <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="usernamename" autofocus placeholder="Username">
+                            @error('username')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
                         <!-- <label for="email" class="col-md-8 col-form-label text-md-end"><i class="fa-solid fa-user"></i></label> -->
                         <div class="col-md-8">
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email">
                             @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <!-- <label for="email" class="col-md-8 col-form-label text-md-end"><i class="fa-solid fa-user"></i></label> -->
+                        <div class="col-md-8">
+                            <input id="nohp" type="nohp" class="form-control @error('nohp') is-invalid @enderror" name="nohp" value="{{ old('nohp') }}" required autocomplete="nohp" autofocus placeholder="Nomor Telepon">
+                            @error('nohp')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>

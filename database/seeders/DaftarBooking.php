@@ -31,7 +31,7 @@ class DaftarBooking extends Seeder
                 'no_lapang' => mt_rand(1, 4),
                 'total_jam' => mt_rand(0, 10),
                 'total_harga' => mt_rand(200000, 300000),
-                'status' =>  $faker->randomElement(['On Progress', 'Pending', 'Success']),
+                'status' =>  $faker->randomElement(['UnPaid', 'Paid']),
             ]);
         }
     }

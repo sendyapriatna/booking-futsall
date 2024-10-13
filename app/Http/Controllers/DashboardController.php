@@ -17,7 +17,16 @@ class DashboardController extends Controller
     public function index()
     {
         $this->authorize('admin');
-        return view('layouts.dashboard.dashboard');
+        $users = DB::table('users')->count();
+        $count_data_pendapatan = DB::table('booking_tables')->where('status', 'Paid')->count();
+        $data_booking_total_pendapatan = DB::table('booking_tables')->where('status', 'Paid')->get();
+        // dd($data);
+
+        $total_pendapatan = 0;
+        for ($i = 0; $i < $count_data_pendapatan; $i++) {
+            $total_pendapatan = $data_booking_total_pendapatan[$i]->total_harga + $total_pendapatan;
+        }
+        return view('layouts.dashboard.dashboard', compact('count_data_pendapatan', 'total_pendapatan', 'users'));
     }
 
     // CONTROLLER ADMIN
@@ -661,4 +670,12 @@ class DashboardController extends Controller
         }
     }
     // END PROFILE USER
+
+
+    // DASHBORD COUNT
+    public function count(Request $request)
+    {
+        $users = DB::table('users')->count();
+        dd($users);
+    }
 }

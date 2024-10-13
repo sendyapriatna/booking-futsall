@@ -77,6 +77,7 @@ Route::get('/lapang/{id}', [App\Http\Controllers\LapangController::class, 'lapan
 Route::post('/lapang/store', [App\Http\Controllers\LapangController::class, 'lapang2'])->middleware('auth');
 // Route::post('/lapang/setcoba', [App\Http\Controllers\BookingController::class, 'cek']);
 Route::post('/lapang/setdate', [App\Http\Controllers\LapangController::class, 'cektgl']);
+Route::get('/lapang/finish_booking/{id}', [App\Http\Controllers\LapangController::class, 'booking']);
 
 // USER PROFILE
 Route::get('/landingpage/profil/{id}', [App\Http\Controllers\DashboardController::class, 'indexProfile'])->middleware('auth');

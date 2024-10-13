@@ -19,11 +19,11 @@
                     </div>
                     <div class="card-wrap">
                         <div class="card-header mt-n2">
-                            <h4><b>Pendapatan Hari ini</b></h4>
-                            <h4 class="mt-2">0 Transaksi</h4>
+                            <h4><b>Total Pendapatan</b></h4>
+
                         </div>
                         <div class="card-body">
-                            0
+                            Rp.{{$total_pendapatan}}
                         </div>
                     </div>
                 </div>
@@ -35,11 +35,10 @@
                     </div>
                     <div class="card-wrap">
                         <div class="card-header mt-n2">
-                            <h4><b>Pendapatan Bulan ini</b></h4>
-                            <h4 class="mt-2">0 Transaksi</h4>
+                            <h4><b>Total Transaksi Berhasil</b></h4>
                         </div>
                         <div class="card-body">
-                            0
+                            {{$count_data_pendapatan}}
                         </div>
                     </div>
                 </div>
@@ -47,15 +46,14 @@
             <div class="col-lg-3 col-md-3 col-sm-3 col-12">
                 <div class="card card-statistic-1">
                     <div class="card-icon bg-danger">
-                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fas fa-user-alt"></i>
                     </div>
                     <div class="card-wrap">
                         <div class="card-header mt-n2">
-                            <h4><b>Pendapatan Tahun ini</b></h4>
-                            <h4 class="mt-2">0 Transaksi</h4>
+                            <h4><b>Jumlah User</b></h4>
                         </div>
                         <div class="card-body">
-                            0
+                            {{$users}}
                         </div>
                     </div>
                 </div>
@@ -82,7 +80,7 @@
                 <div class="card p-3">
                     <div class="card-body p-0">
                         <div class="table-responsive">
-                            <canvas id="myChart"></canvas>
+                            <canvas id="chart1"></canvas>
                         </div>
                     </div>
                 </div>

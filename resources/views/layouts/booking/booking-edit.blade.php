@@ -86,9 +86,8 @@
                             <input type="hidden" name="status" value="{{$data->status}}">
                             <select class="custom-select" name="status" id="status" aria-label="Default select example">
                                 <option disabled selected>{{$data->status}}</option>
-                                <option class="p-3" value="On Progress">On Progress</option>
-                                <option class="p-3" value="Pending">Pending</option>
-                                <option class="p-3" value="Success">Success</option>
+                                <option class="p-3" value="Unpaid">Unpaid</option>
+                                <option class="p-3" value="Paid">Paid</option>
                             </select>
                         </div>
                     </div>
@@ -104,7 +103,7 @@
                         </div>
                         <div class="col p-3">
                             <label for="status" class="form-label">Detail Jam Booking</label>
-                            <input type="text" class="form-control @error('jadwal_array') is-invalid @enderror" name="jadwal_array" id="jadwal_array" value="{{$data->jadwal_array}}">
+                            <input type="text" class="form-control @error('jadwal_array') is-invalid @enderror" name="jadwal_array" id="jadwal_array" value="{{$get_data_jadwal->jadwal}}">
                             @error('jadwal_array')
                             <div class="invalid-feedback">
                                 {{$message}}

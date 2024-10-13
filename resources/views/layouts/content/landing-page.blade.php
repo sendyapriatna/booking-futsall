@@ -14,11 +14,6 @@
         <div class="section-header">
             <h1>Lapang Futsal Gor Amalia Indah</h1>
         </div>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-            </ol>
-        </nav>
         <div class="card p-3">
             <div class="card-body p-0">
                 <div class="row d-flex justify-content-center text-center">

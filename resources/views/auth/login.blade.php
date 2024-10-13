@@ -4,10 +4,10 @@
 <div class="container">
     <section class="section shadow-lg p-3 mb-5 bg-body rounded" style="margin-top: 15vh;">
         <div class="row justify-content-center">
-            <div class="col-md-7">
-                <img class="img-fluid" src="{{ asset('img/login.png') }}" alt="">
+            <div class="col-md-7" style="min-height: 550px;">
+                <img class="img-fluid" src="{{ asset('img/login.png') }}" alt="" style="margin-top: 5vh;">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5" style="margin-top: 10vh;">
                 <div class="col-md p-4 mt-4 text-center justify-content-center">
                     <h5 style="color: #787adc;"><b>SELAMAT DATANG</b></h5>
                     <h5 style="color: #787adc;"><b>DI GOR AMALIA INDAH</b></h5>
