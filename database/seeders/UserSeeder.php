@@ -18,16 +18,16 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('users')->insert([
-            'name' => 'Sendy Apriatna',
-            'username' => 'sendyapriatna',
-            'nohp' => rand(6280000000000, 6289999999999),
-            'email' => 'admin1@gmail.com',
-            'password' => Hash::make('admin'),
-            'role' => 'admin',
-            'created_at' => Carbon::now(),
-            'image' => '/post-image-profile/default/avatar-1.png'
-        ]);
+        // DB::table('users')->insert([
+        //     'name' => 'Sendy Apriatna',
+        //     'username' => 'sendyapriatna',
+        //     'nohp' => rand(6280000000000, 6289999999999),
+        //     'email' => 'admin1@gmail.com',
+        //     'password' => Hash::make('admin'),
+        //     'role' => 'admin',
+        //     'created_at' => Carbon::now(),
+        //     'image' => '/post-image-profile/default/avatar-1.png'
+        // ]);
 
         DB::table('users')->insert([
             'name' => 'Jordan Brilian',
