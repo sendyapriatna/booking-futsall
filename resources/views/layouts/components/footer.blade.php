@@ -35,21 +35,25 @@
                     <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
 
                     <!-- Facebook -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                    <!-- <a class="btn btn-primary btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a> -->
 
                     <!-- Twitter -->
                     <!-- <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a> -->
 
                     <!-- Google -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+                    <!-- <a class="btn btn-primary btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a> -->
 
                     <!-- Instagram -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-danger btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
                     <!-- Linkedin -->
                     <!-- <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a> -->
                     <!-- Github -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-success btn-floating m-1" href="https://wa.me/+6281933731540" role="button"><i class="fa-brands fa-whatsapp"></i></a>
+
+                    <!-- Maps -->
+                    <a class="btn btn-warning btn-floating m-1" href="https://maps.app.goo.gl/Kt9PocToXk8i4gAR6" role="button"><i class="fa fa-map-marker"></i></a>
+
                 </div>
             </div>
             <!--Grid row-->
